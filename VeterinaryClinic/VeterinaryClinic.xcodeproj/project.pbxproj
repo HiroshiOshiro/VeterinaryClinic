@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		68C1351424B1C5CC0067847A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C1351324B1C5CC0067847A /* AppDelegate.swift */; };
 		68C1351624B1C5CC0067847A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C1351524B1C5CC0067847A /* SceneDelegate.swift */; };
-		68C1351824B1C5CC0067847A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C1351724B1C5CC0067847A /* ContentView.swift */; };
 		68C1351A24B1C5D50067847A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68C1351924B1C5D50067847A /* Assets.xcassets */; };
 		68C1351D24B1C5D50067847A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68C1351C24B1C5D50067847A /* Preview Assets.xcassets */; };
 		68C1352024B1C5D50067847A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68C1351E24B1C5D50067847A /* LaunchScreen.storyboard */; };
 		68C1352B24B1C5D60067847A /* VeterinaryClinicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C1352A24B1C5D60067847A /* VeterinaryClinicTests.swift */; };
 		68C1353624B1C5D60067847A /* VeterinaryClinicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C1353524B1C5D60067847A /* VeterinaryClinicUITests.swift */; };
+		68C1354424B1CB850067847A /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C1354324B1CB850067847A /* TopView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		68C1351024B1C5CC0067847A /* VeterinaryClinic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeterinaryClinic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68C1351324B1C5CC0067847A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68C1351524B1C5CC0067847A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		68C1351724B1C5CC0067847A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		68C1351924B1C5D50067847A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68C1351C24B1C5D50067847A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		68C1351F24B1C5D50067847A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		68C1353124B1C5D60067847A /* VeterinaryClinicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeterinaryClinicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68C1353524B1C5D60067847A /* VeterinaryClinicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeterinaryClinicUITests.swift; sourceTree = "<group>"; };
 		68C1353724B1C5D60067847A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68C1354324B1CB850067847A /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 			children = (
 				68C1351324B1C5CC0067847A /* AppDelegate.swift */,
 				68C1351524B1C5CC0067847A /* SceneDelegate.swift */,
-				68C1351724B1C5CC0067847A /* ContentView.swift */,
+				68C1354324B1CB850067847A /* TopView.swift */,
 				68C1351924B1C5D50067847A /* Assets.xcassets */,
 				68C1351E24B1C5D50067847A /* LaunchScreen.storyboard */,
 				68C1352124B1C5D50067847A /* Info.plist */,
@@ -268,8 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				68C1351424B1C5CC0067847A /* AppDelegate.swift in Sources */,
+				68C1354424B1CB850067847A /* TopView.swift in Sources */,
 				68C1351624B1C5CC0067847A /* SceneDelegate.swift in Sources */,
-				68C1351824B1C5CC0067847A /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +439,7 @@
 				DEVELOPMENT_TEAM = SN5DS5FR82;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = VeterinaryClinic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +460,7 @@
 				DEVELOPMENT_TEAM = SN5DS5FR82;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = VeterinaryClinic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
