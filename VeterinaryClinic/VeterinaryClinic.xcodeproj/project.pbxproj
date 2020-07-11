@@ -15,7 +15,7 @@
 		68C1352B24B1C5D60067847A /* VeterinaryClinicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C1352A24B1C5D60067847A /* VeterinaryClinicTests.swift */; };
 		68C1353624B1C5D60067847A /* VeterinaryClinicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C1353524B1C5D60067847A /* VeterinaryClinicUITests.swift */; };
 		68C1354424B1CB850067847A /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C1354324B1CB850067847A /* TopView.swift */; };
-		68C1354724B216C20067847A /* Pets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C1354624B216C20067847A /* Pets.swift */; };
+		68C1354724B216C20067847A /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C1354624B216C20067847A /* Pet.swift */; };
 		68C1354A24B21AE70067847A /* ImageFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C1354924B21AE70067847A /* ImageFromURL.swift */; };
 		68C1354D24B21B280067847A /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C1354C24B21B280067847A /* ImageDownloader.swift */; };
 		68C1355024B21ED80067847A /* pets.json in Resources */ = {isa = PBXBuildFile; fileRef = 68C1354F24B21ED80067847A /* pets.json */; };
@@ -56,7 +56,7 @@
 		68C1353524B1C5D60067847A /* VeterinaryClinicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeterinaryClinicUITests.swift; sourceTree = "<group>"; };
 		68C1353724B1C5D60067847A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68C1354324B1CB850067847A /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
-		68C1354624B216C20067847A /* Pets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pets.swift; sourceTree = "<group>"; };
+		68C1354624B216C20067847A /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		68C1354924B21AE70067847A /* ImageFromURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFromURL.swift; sourceTree = "<group>"; };
 		68C1354C24B21B280067847A /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		68C1354F24B21ED80067847A /* pets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pets.json; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 		68C1354524B2167A0067847A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				68C1354624B216C20067847A /* Pets.swift */,
+				68C1354624B216C20067847A /* Pet.swift */,
 				68C1355424B2244C0067847A /* Data.swift */,
 			);
 			path = Model;
@@ -325,7 +325,7 @@
 				68C1355724B3FF0A0067847A /* PetRow.swift in Sources */,
 				68C1355524B2244C0067847A /* Data.swift in Sources */,
 				68C1351424B1C5CC0067847A /* AppDelegate.swift in Sources */,
-				68C1354724B216C20067847A /* Pets.swift in Sources */,
+				68C1354724B216C20067847A /* Pet.swift in Sources */,
 				68C1354424B1CB850067847A /* TopView.swift in Sources */,
 				68C1354A24B21AE70067847A /* ImageFromURL.swift in Sources */,
 				68C1354D24B21B280067847A /* ImageDownloader.swift in Sources */,

@@ -14,7 +14,6 @@ struct Pet: Hashable, Codable, Identifiable {
     var title: String
     var contentUrl: String
     var dateAdded: Date
-    
 }
 
 extension Pet {
