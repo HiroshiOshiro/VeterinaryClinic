@@ -30,6 +30,17 @@ struct ImageFromURL: View {
             }
         }
     }
+    
+//    var body: Image {
+//        var image: Image
+//        if let imageData = self.imageDownloader.downloadData,
+//            let img = UIImage(data: imageData) {
+//            image = Image(uiImage: img).resizable()
+//        } else {
+//            image = Image(uiImage: UIImage()).resizable()
+//        }
+//        return image
+//    }
 }
 
 struct ImageFromURL_Previews: PreviewProvider {

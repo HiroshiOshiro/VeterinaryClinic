@@ -30,11 +30,12 @@ struct TopView: View {
                 }
             }
             Text("Opening Hours: XXX")
-                .font(.title)
                 .frame(minWidth: 0, maxWidth: .infinity)
-                .padding(.vertical, 20.0)
+                .padding(.vertical, 15.0)
                 .border(Color.gray, width: 4)
-            
+            List(petData) { pet in
+                PetRow(pet: pet)
+            }
         }.padding(.horizontal, 10.0)
     }
 }

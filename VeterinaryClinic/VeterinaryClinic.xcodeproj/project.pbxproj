@@ -20,6 +20,8 @@
 		68C1354D24B21B280067847A /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C1354C24B21B280067847A /* ImageDownloader.swift */; };
 		68C1355024B21ED80067847A /* pets.json in Resources */ = {isa = PBXBuildFile; fileRef = 68C1354F24B21ED80067847A /* pets.json */; };
 		68C1355224B21EDF0067847A /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 68C1355124B21EDF0067847A /* config.json */; };
+		68C1355524B2244C0067847A /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C1355424B2244C0067847A /* Data.swift */; };
+		68C1355724B3FF0A0067847A /* PetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C1355624B3FF0A0067847A /* PetRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		68C1354C24B21B280067847A /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		68C1354F24B21ED80067847A /* pets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pets.json; sourceTree = "<group>"; };
 		68C1355124B21EDF0067847A /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		68C1355424B2244C0067847A /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		68C1355624B3FF0A0067847A /* PetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 				68C1351324B1C5CC0067847A /* AppDelegate.swift */,
 				68C1351524B1C5CC0067847A /* SceneDelegate.swift */,
 				68C1354324B1CB850067847A /* TopView.swift */,
+				68C1355624B3FF0A0067847A /* PetRow.swift */,
 				68C1351924B1C5D50067847A /* Assets.xcassets */,
 				68C1351E24B1C5D50067847A /* LaunchScreen.storyboard */,
 				68C1352124B1C5D50067847A /* Info.plist */,
@@ -154,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				68C1354624B216C20067847A /* Pets.swift */,
+				68C1355424B2244C0067847A /* Data.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -316,6 +322,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68C1355724B3FF0A0067847A /* PetRow.swift in Sources */,
+				68C1355524B2244C0067847A /* Data.swift in Sources */,
 				68C1351424B1C5CC0067847A /* AppDelegate.swift in Sources */,
 				68C1354724B216C20067847A /* Pets.swift in Sources */,
 				68C1354424B1CB850067847A /* TopView.swift in Sources */,
