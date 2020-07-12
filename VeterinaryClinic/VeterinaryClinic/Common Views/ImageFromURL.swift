@@ -22,25 +22,14 @@ struct ImageFromURL: View {
         if let imageData = self.imageDownloader.downloadData {
             let img = UIImage(data: imageData)
             return VStack {
-                Image(uiImage: img ?? UIImage()).resizable()
+                Image(uiImage: img ?? UIImage()).resizable().scaledToFit()
             }
         } else {
             return VStack {
-                Image(uiImage: UIImage()).resizable()
+                Image(uiImage: UIImage()).resizable().scaledToFit()
             }
         }
     }
-    
-//    var body: Image {
-//        var image: Image
-//        if let imageData = self.imageDownloader.downloadData,
-//            let img = UIImage(data: imageData) {
-//            image = Image(uiImage: img).resizable()
-//        } else {
-//            image = Image(uiImage: UIImage()).resizable()
-//        }
-//        return image
-//    }
 }
 
 struct ImageFromURL_Previews: PreviewProvider {
