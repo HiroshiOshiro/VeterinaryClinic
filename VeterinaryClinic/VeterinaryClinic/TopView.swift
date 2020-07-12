@@ -18,24 +18,28 @@ struct TopView: View {
     var body: some View {
         VStack(spacing: 10.0) {
             HStack(spacing: 10.0) {
-                Button(action: {}) {
-                    Text("Chat")
-                        .frame(minWidth: 0, maxWidth: .infinity)
-                        .frame(height: 60.0)
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
+                if config.isChatEnabled {
+                    Button(action: {}) {
+                        Text(NSLocalizedString("topChat", comment: ""))
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                            .frame(height: 60.0)
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    }
                 }
-                Button(action: {}) {
-                    Text("Call")
-                        .frame(minWidth: 0, maxWidth: .infinity)
-                        .frame(height: 60.0)
-                        .background(Color.green)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
+                if config.isCallEnabled {
+                    Button(action: {}) {
+                        Text(NSLocalizedString("topCall", comment: ""))
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                            .frame(height: 60.0)
+                            .background(Color.green)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    }
                 }
             }
-            Text("Opening Hours: " + config.workHours)
+            Text(NSLocalizedString("topOpeningHoursPrefix", comment: "") + config.workHours)
                 .frame(minWidth: 0, maxWidth: .infinity)
                 .padding(.vertical, 15.0)
                 .border(Color.gray, width: 4)

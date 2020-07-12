@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  VeterinaryClinic
+
+  Created by hiroshi on 2020/07/12.
+  Copyright © 2020 hiroshi. All rights reserved.
+*/
+
+"topCall" = "Call";
+"topChat" = "Chat";
+"topOpeningHoursPrefix" = "Opening Hours: ";

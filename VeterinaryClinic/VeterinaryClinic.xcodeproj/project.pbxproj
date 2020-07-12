@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		68AF34C024BA10BD0053BD64 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF34BF24BA10BD0053BD64 /* Config.swift */; };
+		68AF34C424BAAEF20053BD64 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68AF34C624BAAEF20053BD64 /* Localizable.strings */; };
 		68C1351424B1C5CC0067847A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C1351324B1C5CC0067847A /* AppDelegate.swift */; };
 		68C1351624B1C5CC0067847A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C1351524B1C5CC0067847A /* SceneDelegate.swift */; };
 		68C1351A24B1C5D50067847A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68C1351924B1C5D50067847A /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		68AF34BF24BA10BD0053BD64 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		68AF34C524BAAEF20053BD64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		68C1351024B1C5CC0067847A /* VeterinaryClinic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeterinaryClinic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68C1351324B1C5CC0067847A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68C1351524B1C5CC0067847A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 			children = (
 				68C1354F24B21ED80067847A /* pets.json */,
 				68C1355124B21EDF0067847A /* config.json */,
+				68AF34C624BAAEF20053BD64 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68C1352024B1C5D50067847A /* LaunchScreen.storyboard in Resources */,
+				68AF34C424BAAEF20053BD64 /* Localizable.strings in Resources */,
 				68C1355024B21ED80067847A /* pets.json in Resources */,
 				68C1355224B21EDF0067847A /* config.json in Resources */,
 				68C1351D24B1C5D50067847A /* Preview Assets.xcassets in Resources */,
@@ -377,6 +381,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		68AF34C624BAAEF20053BD64 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68AF34C524BAAEF20053BD64 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		68C1351E24B1C5D50067847A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
