@@ -10,12 +10,21 @@ import SwiftUI
 import Combine
 
 final class TopPresenter: ObservableObject {
-    private let router = TopRouter()
     
+    struct Parameter {
+        let pets: [Pet]
+        let config: Config
+    }
     enum Inputs {
         case didTapCallButton
         case didTapChatButton
-        
+    }
+    
+    private let router = TopRouter()
+    let parameter: Parameter
+    
+    init(parameter: Parameter) {
+        self.parameter = parameter
     }
     
     func tapButton(inputs: Inputs) {

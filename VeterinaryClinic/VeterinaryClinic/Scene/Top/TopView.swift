@@ -9,11 +9,9 @@
 import SwiftUI
 
 struct TopView: View {
-    private var config: Config
     @ObservedObject var presenter: TopPresenter
-    
-    init(configData: Config, presenter: TopPresenter) {
-        config = configData
+        
+    init(presenter: TopPresenter) {
         self.presenter = presenter
     }
     
@@ -22,7 +20,7 @@ struct TopView: View {
             VStack(spacing: 10.0) {
 
                 HStack(spacing: 10.0) {
-                    if config.isChatEnabled {
+                    if presenter.parameter.config.isChatEnabled {
                         Button(action: {}) {
                             Text("topChat")
                                 .frame(minWidth: 0, maxWidth: .infinity)
@@ -32,7 +30,7 @@ struct TopView: View {
                                 .cornerRadius(10)
                         }
                     }
-                    if config.isCallEnabled {
+                    if presenter.parameter.config.isCallEnabled {
                         Button(action: {}) {
                             Text("topCall")
                                 .frame(minWidth: 0, maxWidth: .infinity)
@@ -43,18 +41,20 @@ struct TopView: View {
                         }
                     }
                 }
-                Text(NSLocalizedString("topOpeningHoursPrefix", comment: "") + config.workHours)
+                Text(NSLocalizedString("topOpeningHoursPrefix", comment: "") + presenter.parameter.config.workHours)
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .padding(.vertical, 15.0)
                     .border(Color.gray, width: 4)
 
-                List(petData) { pet in
-                    self.presenter.goToWebView(pet: pet) {
-                        PetRow(pet: pet)
+                List {
+                    ForEach(presenter.parameter.pets, id: \.id) { pet in
+                        self.presenter.goToWebView(pet: pet) {
+                            PetRow(pet: pet)
+                        }
                     }
                 }
             }
-        .padding(.horizontal, 10.0)
+            .padding([.top, .leading, .trailing], 10.0)
         .navigationBarTitle("topTitle", displayMode: .inline)
         }
     }
@@ -62,6 +62,6 @@ struct TopView: View {
 
 struct TopView_Previews: PreviewProvider {
     static var previews: some View {
-        TopView(configData: configData, presenter: TopPresenter())
+        TopView(presenter: TopPresenter(parameter: .init(pets: petData, config: configData)))
     }
 }
