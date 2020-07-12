@@ -9,6 +9,7 @@
 import Foundation
 
 let petData: [Pet] = load("pets.json")
+let configData: Config = load("config.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

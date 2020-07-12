@@ -9,6 +9,12 @@
 import SwiftUI
 
 struct TopView: View {
+    private var config: Config
+    
+    init(configData: Config) {
+        config = configData
+    }
+    
     var body: some View {
         VStack(spacing: 10.0) {
             HStack(spacing: 10.0) {
@@ -29,7 +35,7 @@ struct TopView: View {
                         .cornerRadius(10)
                 }
             }
-            Text("Opening Hours: XXX")
+            Text("Opening Hours: " + config.workHours)
                 .frame(minWidth: 0, maxWidth: .infinity)
                 .padding(.vertical, 15.0)
                 .border(Color.gray, width: 4)
@@ -42,6 +48,6 @@ struct TopView: View {
 
 struct TopView_Previews: PreviewProvider {
     static var previews: some View {
-        TopView()
+        TopView(configData: configData)
     }
 }
