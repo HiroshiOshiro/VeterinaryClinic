@@ -6,6 +6,7 @@
   Copyright © 2020 hiroshi. All rights reserved.
 */
 
+"topTitle" = "Veterinary Clinic";
 "topCall" = "Call";
 "topChat" = "Chat";
 "topOpeningHoursPrefix" = "Opening Hours: ";

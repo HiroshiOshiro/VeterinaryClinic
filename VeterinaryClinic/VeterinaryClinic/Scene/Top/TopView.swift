@@ -16,11 +16,12 @@ struct TopView: View {
     }
     
     var body: some View {
+        NavigationView {
         VStack(spacing: 10.0) {
             HStack(spacing: 10.0) {
                 if config.isChatEnabled {
                     Button(action: {}) {
-                        Text(NSLocalizedString("topChat", comment: ""))
+                        Text("topChat")
                             .frame(minWidth: 0, maxWidth: .infinity)
                             .frame(height: 60.0)
                             .background(Color.blue)
@@ -30,7 +31,7 @@ struct TopView: View {
                 }
                 if config.isCallEnabled {
                     Button(action: {}) {
-                        Text(NSLocalizedString("topCall", comment: ""))
+                        Text("topCall")
                             .frame(minWidth: 0, maxWidth: .infinity)
                             .frame(height: 60.0)
                             .background(Color.green)
@@ -46,7 +47,10 @@ struct TopView: View {
             List(petData) { pet in
                 PetRow(pet: pet)
             }
-        }.padding(.horizontal, 10.0)
+        }
+        .padding(.horizontal, 10.0)
+        .navigationBarTitle("topTitle", displayMode: .inline)
+        }
     }
 }
 
