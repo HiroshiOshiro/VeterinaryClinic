@@ -21,28 +21,10 @@ struct TopView: View {
 
                 HStack(spacing: 10.0) {
                     if presenter.parameter.config.isChatEnabled {
-                        Button(action: {
-                            self.presenter.tapButton(inputs: .didTapCallButton)
-                        }) {
-                            Text("topChat")
-                                .frame(minWidth: 0, maxWidth: .infinity)
-                                .frame(height: 60.0)
-                                .background(Color.blue)
-                                .foregroundColor(.white)
-                                .cornerRadius(10)
-                        }
+                        ActionButton(text: Text("topChat"), backgroundColor: Color.blue, action: {self.presenter.tapButton(inputs: .didTapCallButton)})
                     }
                     if presenter.parameter.config.isCallEnabled {
-                        Button(action: {
-                            self.presenter.tapButton(inputs: .didTapChatButton)
-                        }) {
-                            Text("topCall")
-                                .frame(minWidth: 0, maxWidth: .infinity)
-                                .frame(height: 60.0)
-                                .background(Color.green)
-                                .foregroundColor(.white)
-                                .cornerRadius(10)
-                        }
+                        ActionButton(text: Text("topCall"), backgroundColor: Color.green, action: {self.presenter.tapButton(inputs: .didTapCallButton)})
                     }
                 }
                 Text(NSLocalizedString("topOpeningHoursPrefix", comment: "") + presenter.parameter.config.workHours)
