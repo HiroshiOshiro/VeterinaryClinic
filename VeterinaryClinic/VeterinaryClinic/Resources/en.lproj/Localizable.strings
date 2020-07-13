@@ -10,3 +10,6 @@
 "topCall" = "Call";
 "topChat" = "Chat";
 "topOpeningHoursPrefix" = "Opening Hours: ";
+
+"alertMessageThankYou" = "Thank you for getting in touch with us. We’ll get back to you as soon as possible";
+"alertMessageOutOfBH" = "Work hours has ended. Please contact us again on the next work day";

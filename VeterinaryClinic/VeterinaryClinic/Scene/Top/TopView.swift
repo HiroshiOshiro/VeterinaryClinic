@@ -21,7 +21,9 @@ struct TopView: View {
 
                 HStack(spacing: 10.0) {
                     if presenter.parameter.config.isChatEnabled {
-                        Button(action: {}) {
+                        Button(action: {
+                            self.presenter.tapButton(inputs: .didTapCallButton)
+                        }) {
                             Text("topChat")
                                 .frame(minWidth: 0, maxWidth: .infinity)
                                 .frame(height: 60.0)
@@ -31,7 +33,9 @@ struct TopView: View {
                         }
                     }
                     if presenter.parameter.config.isCallEnabled {
-                        Button(action: {}) {
+                        Button(action: {
+                            self.presenter.tapButton(inputs: .didTapChatButton)
+                        }) {
                             Text("topCall")
                                 .frame(minWidth: 0, maxWidth: .infinity)
                                 .frame(height: 60.0)
@@ -45,7 +49,7 @@ struct TopView: View {
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .padding(.vertical, 15.0)
                     .border(Color.gray, width: 4)
-
+                
                 List {
                     ForEach(presenter.parameter.pets, id: \.id) { pet in
                         self.presenter.goToWebView(pet: pet) {
@@ -55,7 +59,8 @@ struct TopView: View {
                 }
             }
             .padding([.top, .leading, .trailing], 10.0)
-        .navigationBarTitle("topTitle", displayMode: .inline)
+            .navigationBarTitle("topTitle", displayMode: .inline)
+            .alert(isPresented: $presenter.isShowAlert, content: presenter.alertBuilder )
         }
     }
 }
